@@ -8,7 +8,7 @@ export interface IFetchPostsRequest {
 export type IFetchPostsResponse = IPost[];
 
 export interface IFetchCurrentPostRequest {
-  postId: number;
+  postId: number | string;
 }
 
 export type IFetchCurrentPostResponse = IPost;

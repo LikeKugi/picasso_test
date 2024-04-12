@@ -1,0 +1,23 @@
+.SinglePost {
+  padding-block-start: 1rem;
+
+  &__title {
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__body {
+    margin-block-end: 1rem;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    gap: 2rem;
+  }
+}

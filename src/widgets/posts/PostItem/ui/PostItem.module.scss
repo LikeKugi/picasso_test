@@ -1,0 +1,36 @@
+.PostItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-inline: 2rem;
+
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+
+  &__number {
+    flex-shrink: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  &__title {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__body {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__link {
+    flex-shrink: 0;
+  }
+}

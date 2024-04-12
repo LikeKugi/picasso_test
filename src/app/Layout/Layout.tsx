@@ -1,7 +1,7 @@
 import { FC, JSX, PropsWithChildren } from 'react';
 import styles from './Layout.module.scss'
-import { Header } from '@/entities/Header/Header';
-import { Footer } from '@/entities/Footer/Footer';
+import { Header } from '@/entities/Header';
+import { Footer } from '@/entities/Footer';
 
 const Layout: FC<PropsWithChildren> = ({children}): JSX.Element => {
   return (

@@ -17,7 +17,7 @@ export const postsApi = api.injectEndpoints({
         };
       }
     }),
-    fetchCurrentPost: build.query<IFetchCurrentPostResponse, IFetchCurrentPostRequest>({
+    fetchPostById: build.query<IFetchCurrentPostResponse, IFetchCurrentPostRequest>({
       query({ postId }) {
         return {
           url: `${ApiConstants.BASE}/${ApiConstants.POSTS}/${postId}`,
@@ -28,4 +28,4 @@ export const postsApi = api.injectEndpoints({
   }),
 });
 
-export const { useFetchCurrentPostQuery, useFetchPostsQuery } = postsApi;
+export const { useLazyFetchPostByIdQuery, useFetchPostsQuery } = postsApi;
