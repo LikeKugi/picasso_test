@@ -1,4 +1,4 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query';
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { ApiConstants } from '@/shared/constants/api.constants';
 
 export const api = createApi({
@@ -8,3 +8,4 @@ export const api = createApi({
   endpoints: () => ({})
 })
 
+export const ApiReducer = api.reducerPath;
