@@ -1,4 +1,8 @@
 .Footer {
+  position: sticky;
+  inset-block-end: 0;
+  inset-inline: 0;
   padding-block-start: 1rem;
   padding-block-end: 2rem;
+  background: #fefefe;
 }
