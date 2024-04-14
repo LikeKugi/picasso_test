@@ -1,5 +1,5 @@
 import { api } from '@/shared/api/api';
-import { ApiConstants } from '@/shared/constants/api.constants';
+import { ApiConstants } from '@/shared/constants';
 import {
   IFetchCurrentPostRequest,
   IFetchCurrentPostResponse,
@@ -12,8 +12,12 @@ export const postsApi = api.injectEndpoints({
     fetchPosts: build.query<IFetchPostsResponse, IFetchPostsRequest>({
       query({ limit, start }) {
         return {
-          url: `${ApiConstants.BASE}/${ApiConstants.POSTS}?_start=${start}&_limit=${limit}`,
-          method: 'GET'
+          url: `${ApiConstants.BASE}/${ApiConstants.POSTS}`,
+          method: 'GET',
+          params: {
+            _start: start,
+            _limit: limit,
+          }
         };
       }
     }),

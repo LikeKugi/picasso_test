@@ -1,6 +1,6 @@
 import { JSX } from 'react';
 import { createHashRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
-import { RouterConstants } from '@/shared/constants/router.constants';
+import { RouterConstants } from '@/shared/constants';
 import { RootPage } from '@/pages/RootPage/RootPage';
 import { MainPage } from '@/pages/MainPage/MainPage';
 import { PostPage } from '@/pages/PostPage/PostPage';

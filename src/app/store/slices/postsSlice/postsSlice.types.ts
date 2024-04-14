@@ -4,4 +4,5 @@ export interface IPostsSliceState {
   posts: IPost[];
   start: number;
   limit: number;
+  max: Readonly<number>;
 }
